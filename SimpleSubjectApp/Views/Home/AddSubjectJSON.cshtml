@@ -1,0 +1,28 @@
+﻿
+
+<h1>Subjects List</h1>
+
+<form asp-action="AddSubjectJSON" asp-controller="" method="post">
+    <div class="form-group">
+        <label for="Subject">Subject:</label>
+        <input type="text" id="Subject" name="json" class="form-control" required>
+        <small class="form-text text-muted">
+            EXAMPLE INPUT:
+            {
+            "Id": 4,
+            "Name": "Physics",
+            "Description": "Description for Physics",
+            "WeeklyClasses": 2,
+            "LiteratureUsed": [
+            "Physics Literature 1",
+            "Physics Literature 2"
+            ]
+            }
+
+        </small>
+    </div>
+    <button type="submit" class="btn btn-primary">Add Subject</button>
+</form>
+<br />
+<a asp-action="Index" asp-controller="" class="btn btn-primary">Back</a>
+

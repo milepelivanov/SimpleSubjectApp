@@ -1,0 +1,24 @@
+﻿@model SimpleSubjectApp.Models.Subject
+
+<h1>Subjects Details</h1>
+
+<div>
+    <p><b>Subject Name:</b></p>
+    <p>@Model.Name</p>
+
+    <p><b>Subject Description:</b></p>
+    <p>@Model.Description</p>
+
+    <p><b>Subject Weekly Classes:</b></p>
+    <p>@Model.WeeklyClasses</p>
+
+    <p><b>Subject Name:</b></p>
+    @foreach(var lit in Model.LiteratureUsed)
+    {
+        <p>@lit</p>
+    }
+    
+</div>
+<a asp-action="Index" asp-controller="" class="btn btn-primary">Back</a>
+
+

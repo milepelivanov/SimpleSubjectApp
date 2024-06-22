@@ -1,0 +1,27 @@
+﻿
+
+<h1>Subjects List</h1>
+
+<form asp-action="AddSubject" asp-controller="" method="post">
+    <div class="form-group">
+        <label for="Name">Name:</label>
+        <input type="text" id="Name" name="Name" class="form-control" required>
+    </div>
+    <div class="form-group">
+        <label for="Description">Description:</label>
+        <textarea id="Description" name="Description" class="form-control" required></textarea>
+    </div>
+    <div class="form-group">
+        <label for="WeeklyClasses">Weekly Classes:</label>
+        <input type="number" id="WeeklyClasses" name="WeeklyClasses" class="form-control" required>
+    </div>
+    <div class="form-group">
+        <label for="LiteratureUsed">Literature Used:</label>
+        <input type="text" id="LiteratureUsed" name="LiteratureUsed" class="form-control">
+        <small class="form-text text-muted">Separate literature items with commas (e.g., Book1, Book2).</small>
+    </div>
+    <button type="submit" class="btn btn-primary">Add Subject</button>
+</form>
+<br />
+<a asp-action="Index" asp-controller="" class="btn btn-primary">Back</a>
+
